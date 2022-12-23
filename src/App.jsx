@@ -1,20 +1,26 @@
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
+
 import Button from "./Button.jsx";
 import Input from "./Input.jsx";
+import NavBar from "./NavBar.jsx";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import Products from "./Products.jsx";
+import Cart from "./Cart.jsx";
 
 function App() {
-  function handleButtonClick() {
-    //
-  }
-
-  function handleLastNameInput() {
-    //
-  }
 
   return (
-    <div style={{display: "flex", alignItems: "center", gap: "20px", flexWrap: "wrap"}}>
-        <Input placeholder="First name" />
-        <Input placeholder="Last name" onInput={handleLastNameInput} />
-        <Input placeholder="Email" type="email" required />
+    <div className="container">
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/products" element={<Products />}></Route>
+          <Route path="/cart" element={<Cart />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
