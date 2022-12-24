@@ -1,0 +1,35 @@
+{
+  "supermarket": [
+    {
+      "description":"200g cheese block",
+      "id":1,
+      "image":"/server/images/cheese.png",
+      "name":"Cheese",
+      "price":10,
+      "price_id":""
+    },
+    {
+      "description":"200ml milk bottle",
+      "id":2,
+      "image":"/server/images/milk.png",
+      "name":"Milk",
+      "price":5,
+      "price_id":""},
+    {
+      "description":"1 piece of tomato",
+      "id":3,
+      "image":"/server/images/tomato.png",
+      "name":"Tomato",
+      "price":2.75,
+      "price_id":""
+    },
+    {
+      "description":"500g pineapple",
+      "id":4,
+      "image":"/server/images/pineapple.png",
+      "name":"Pineapple",
+      "price":3.25,
+      "price_id":""
+    }
+  ]
+}
