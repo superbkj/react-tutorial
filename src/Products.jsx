@@ -10,7 +10,7 @@ export default function Products() {
   //console.log(loading);
 
   useEffect(() => {
-    get("supermarket")
+    get("products")
     .then(data => {
       setProducts(data);
     })
