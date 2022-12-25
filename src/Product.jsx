@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import Button from "./Button.jsx";
 
 export default function Product(props) {
-  const {details} = props;
+  const {details, cart, onProductAdd, onProductDelete} = props;
 
   return (
     <div className="product">
@@ -21,9 +21,9 @@ export default function Product(props) {
       </div>
       <div className="product-checkout">
         <div>
-            <Button className="product-delete">x</Button>
+            <Button className="product-delete" onClick={() => onProductDelete(details.id)} >x</Button>
         </div>
-        <Button>${details.price}</Button>
+        <Button onClick={() => onProductAdd(details)}>${details.price}</Button>
       </div>
     </div>
   )

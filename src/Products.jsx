@@ -4,7 +4,7 @@ import useFetch from "./useFetch.js";
 import Product from "./Product.jsx";
 import Loader from "./Loader.jsx";
 
-export default function Products() {
+export default function Products(props) {
   const [products, setProducts] = useState([]);
   const {loading, get} = useFetch("http://localhost:3000/");
   //console.log(loading);
@@ -26,7 +26,15 @@ export default function Products() {
       {loading && <Loader />}
       <div className="products-grid">
         {products.map(product => {
-          return <Product key={product.id} details={product}/>
+          return (
+            <Product
+              key={product.id}
+              details={product}
+              cart={props.cart}
+              onProductAdd={props.onProductAdd}
+              onProductDelete={props.onProductDelete}
+            />
+          )
         })}
       </div>
     </div>
