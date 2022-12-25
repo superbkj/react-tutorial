@@ -6,7 +6,7 @@ import Loader from "./Loader.jsx";
 
 export default function Products(props) {
   const [products, setProducts] = useState([]);
-  const {loading, get} = useFetch("http://localhost:3000/");
+  const {loading, get} = useFetch("https://my-json-server.typicode.com/superbkj/react-tutorial/");
   //console.log(loading);
 
   useEffect(() => {

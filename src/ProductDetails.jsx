@@ -5,7 +5,7 @@ import useFetch from "./useFetch";
 import Loader from "./Loader";
 
 export default function ProductDetails() {
-  const {loading, get} = useFetch("http://localhost:3000/");
+  const {loading, get} = useFetch("https://my-json-server.typicode.com/superbkj/react-tutorial/");
   const [details, setDetails] = useState({});
 
   const {id} = useParams();
