@@ -1,19 +1,78 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id":1,
+      "description":"200g cheese block",
+      "image":"/server/images/cheese.png",
+      "name":"Cheese",
+      "price":10,
+      "price_id":""
+    },
+    {
+      "id":2,
+      "description":"200ml milk bottle",
+      "image":"/server/images/milk.png",
+      "name":"Milk",
+      "price":5,
+      "price_id":""},
+    {
+      "id":3,
+      "description":"1 piece of tomato",
+      "image":"/server/images/tomato.png",
+      "name":"Tomato",
+      "price":2.75,
+      "price_id":""
+    },
+    {
+      "id":4,
+      "description":"500g pineapple",
+      "image":"/server/images/pineapple.png",
+      "name":"Pineapple",
+      "price":3.25,
+      "price_id":""
     }
   ],
-  "comments": [
+
+  "productinfo": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id":1,
+      "description": "200g cheese block", 
+      "image": "/server/images/cheese.png",
+      "name": "Cheese",
+      "nutrition": {"carbs": 1.3, "fat": 33, "protein": 25, "salt": 1}, 
+      "price": 10, 
+      "price_id": "",
+      "storage": "Store in a cool place (between 5°C and 15°C)"
+    },
+    {
+      "id":2,
+      "description": "200ml milk bottle",
+      "image": "/server/images/milk.png",
+      "name": "Milk",
+      "nutrition": {"carbs": 11, "fat": 15, "protein": 16, "salt": 0.44},
+      "price": 5,
+      "price_id": "",
+      "storage": "Store in the fridge"
+    },
+    {
+      "id":3,
+      "description": "1 piece of tomato",
+      "image": "/server/images/tomato.png",
+      "name": "Tomato",
+      "nutrition": {"carbs": 4, "fat": 0.2, "protein": 1, "salt": 0},
+      "price": 2.75,
+      "price_id": "",
+      "storage": "Store in a cool place, away from the sun."
+    },
+    {
+      "id":4,
+      "description": "500g pineapple",
+      "image": "/server/images/pineapple.png",
+      "name": "Pineapple",
+      "nutrition": {"carbs": 22, "fat": 2, "protein": 1, "salt": 0},
+      "price": 3.25,
+      "price_id": "",
+      "storage": "Store in a cool place, away from the sun."
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
